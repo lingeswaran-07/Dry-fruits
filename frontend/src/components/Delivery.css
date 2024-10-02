@@ -1,0 +1,110 @@
+/* Full width for body */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f8ff; /* Light background color */
+}
+
+/* Container covers the whole width of the page */
+.delivery-container {
+    width: 100%;
+    padding: 40px 20px;
+    background-color: #f0f8ff;
+    color: #333;
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+/* A content wrapper to center-align text and apply max width */
+.delivery-content {
+    max-width: 1200px;
+    width: 100%; /* Ensure it uses full width */
+}
+
+/* Delivery title with a bold, professional font */
+.delivery-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center; /* Center align title */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Introductory paragraph with larger font */
+.delivery-intro {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    text-align: center; /* Center align intro text */
+    color: #34495e;
+    margin-bottom: 30px;
+}
+
+/* List for details, spaced evenly with vibrant color */
+.delivery-list {
+    list-style-type: none;
+    padding: 0;
+    color: black;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: center; /* Center align list items */
+}
+
+.st {
+    color: #2980b9;
+}
+
+.delivery-list li {
+    margin-bottom: 20px;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.delivery-list li::before {
+    content: '✔';
+    color: #27ae60;
+    font-size: 1.5rem;
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Contact information at the bottom */
+.delivery-contact {
+    text-align: center; /* Center align contact info */
+    font-size: 1.1rem;
+    color: #8e44ad;
+}
+
+/* Responsiveness for tablets */
+@media (max-width: 768px) {
+    .delivery-title {
+        font-size: 2.5rem;
+    }
+
+    .delivery-intro, .delivery-contact {
+        font-size: 1.1rem;
+    }
+
+    .delivery-list li {
+        font-size: 1.1rem;
+    }
+}
+
+/* Responsiveness for mobile devices */
+@media (max-width: 480px) {
+    .delivery-title {
+        font-size: 2rem;
+    }
+
+    .delivery-intro, .delivery-list li, .delivery-contact {
+        font-size: 1rem;
+    }
+
+    .delivery-container {
+        padding: 20px 10px;
+    }
+}
