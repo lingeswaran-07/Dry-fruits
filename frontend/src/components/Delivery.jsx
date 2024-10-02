@@ -23,10 +23,17 @@ const Delivery = () => {
           <strong  className='st'>Tracking</strong>: Once your order is shipped, you’ll receive a tracking number to follow your package.
         </li>
       </ul>
+        
+      <p className="ceo-name">
+          <strong>Surender Kumaresan</strong><br />
+          Cofounder and CMO
+        </p>
+        <br/>
 
       <p className="delivery-contact">
         If you have any questions about your delivery, feel free to contact us!
       </p>
+      
     </div>
   )
 }

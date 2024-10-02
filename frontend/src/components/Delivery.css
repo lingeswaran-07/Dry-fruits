@@ -81,6 +81,15 @@ body, html {
     color: #8e44ad;
 }
 
+.ceo-name {
+    font-size: 1.3rem;
+    color: #3d6b9b;
+  }
+  
+  .ceo-name strong {
+    font-size: 1.5rem;
+  }
+
 /* Responsiveness for tablets */
 @media (max-width: 768px) {
     .delivery-title {
@@ -94,6 +103,14 @@ body, html {
     .delivery-list li {
         font-size: 1.1rem;
     }
+
+    .ceo-message, .ceo-name {
+        font-size: 1rem;
+      }
+    
+      .ceo-name strong {
+        font-size: 1.2rem;
+      }
 }
 
 /* Responsiveness for mobile devices */
@@ -119,4 +136,12 @@ body, html {
         display: inline-block; /* Ensure the icon remains on the same line */
         margin-right: 10px; /* Maintain space between icon and text */
     }
+
+    .ceo-message, .ceo-name {
+        font-size: 0.9rem;
+      }
+    
+      .ceo-name strong {
+        font-size: 1.1rem;
+      }
 }
