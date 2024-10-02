@@ -43,7 +43,7 @@ h1 {
   @media (max-width: 480px) {
     .product-image1,
     .product-image2 {
-      width: 200px; /* Even smaller width for mobile screens */
+      width: 300px; /* Even smaller width for mobile screens */
     }
   
     h1 {
