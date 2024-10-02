@@ -54,6 +54,19 @@
     color: #ffcc00;
   }
   
+  /* Icon Section */
+  .contactus-icons {
+    display: flex;
+    justify-content: center; /* Center the icons */
+    gap: 15px; /* Space between icons */
+    margin-top: 10px; /* Space above the icons */
+  }
+  
+  .contactus-icon {
+    width: 40px; /* Set width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
   /* Horizontal Line */
   .contactus hr {
     width: 100%;
@@ -88,5 +101,17 @@
       align-items: center;
       text-align: center;
     }
+  
+    .contactus-icons {
+      flex-direction: row; /* Stack icons on small screens */
+      gap: 10px; /* Space between stacked icons */
+    }
   }
   
+  .ph{
+    color:#d9d9d9;
+  }
+  .gm{
+    text-decoration: none;
+    color:indianred;
+  }

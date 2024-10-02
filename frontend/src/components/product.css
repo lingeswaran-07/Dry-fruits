@@ -1,9 +1,9 @@
 /* General styles for the products section */
 h1 {
-    text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* Responsive font size */
+    color: #2c3e50;
     margin-bottom: 20px;
-    color: #333;
+    font-weight: bold;
   }
   
   /* Container for the product images */
@@ -14,7 +14,7 @@ h1 {
   
   /* First product image */
   .product-image1 {
-    width: 1200px; /* Initial width */
+    width: 1000px; /* Initial width */
     height: auto; /* Maintain aspect ratio */
     max-width: 100%; /* Make it responsive */
     display: inline-block;
@@ -24,7 +24,7 @@ h1 {
   
   /* Second product image */
   .product-image2 {
-    width: 1200px; /* Initial width */
+    width: 1000px; /* Initial width */
     height: auto; /* Maintain aspect ratio */
     max-width: 100%; /* Make it responsive */
     display: inline-block;

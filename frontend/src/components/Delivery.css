@@ -26,12 +26,10 @@ body, html {
 
 /* Delivery title with a bold, professional font */
 .delivery-title {
-    font-size: 3rem;
-    font-weight: bold;
+    font-size: 2.5rem; /* Responsive font size */
     color: #2c3e50;
-    text-align: center; /* Center align title */
-    margin-bottom: 30px;
-    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
 /* Introductory paragraph with larger font */
@@ -58,13 +56,17 @@ body, html {
     color: #2980b9;
 }
 
+/* Flexbox used for list alignment */
 .delivery-list li {
     margin-bottom: 20px;
-    display: flex; /* Use flexbox for alignment */
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
+    display: flex;
+    justify-content: flex-start; /* Align items to the start of the container */
+    align-items: flex-start; /* Align the icon and text at the top */
+    flex-wrap: wrap; /* Allow text to wrap */
+    text-align: left; /* Ensure text aligns to the left */
 }
 
+/* Add a check mark icon before each list item */
 .delivery-list li::before {
     content: '✔';
     color: #27ae60;
@@ -106,5 +108,15 @@ body, html {
 
     .delivery-container {
         padding: 20px 10px;
+    }
+
+    .delivery-list li {
+        display: block; /* Stack icon and text vertically for small screens */
+        text-align: left;
+    }
+
+    .delivery-list li::before {
+        display: inline-block; /* Ensure the icon remains on the same line */
+        margin-right: 10px; /* Maintain space between icon and text */
     }
 }
